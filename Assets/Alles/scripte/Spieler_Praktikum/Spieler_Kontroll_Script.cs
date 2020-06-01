@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class Spieler_Kontroll_Script : MonoBehaviour
 {
+    public GameObject Spieler_Leben_Slider;
+    playerHealth ph;
     private Animator m_spieler_animator_kontroll;
     private Rigidbody2D r_rigid_body_spieler;        //Store a reference to the Rigidbody2D component required to use 2D Physics.
-
+    private Base_Ball b_base_Ball_attack;
     private Vector2 moveVelocity;
     public float speed;
     //float move = 0f;
     bool r_gesichts_richtung;
 
     //jumping varible
-   // private bool i_ist_aufem_boden = false;
+    //private bool i_ist_aufem_boden = false;
     public float b_boden_radius_kontrolle = 0.4f;
     public LayerMask b_boden_layer_maske;
     public Transform t_transform_boden_check_objekt;
@@ -26,7 +28,7 @@ public class Spieler_Kontroll_Script : MonoBehaviour
         r_rigid_body_spieler = GetComponent<Rigidbody2D>();
         m_spieler_animator_kontroll = GetComponent<Animator>();
         r_gesichts_richtung = true;
-      
+       // b_base_Ball_attack  = GameObject.FindGameObjectWithTag("Animation_Kontroller_Baseball").GetComponent<Base_Ball>();
     }
 
     private void FixedUpdate()
@@ -52,13 +54,14 @@ public class Spieler_Kontroll_Script : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.F))
         {
-           // m_spieler_animator_kontroll.SetTrigger("isAttack");
+            //b_base_Ball_attack.spieler_is_baseball();
+            m_spieler_animator_kontroll.SetTrigger("isSchwung");
         }
         else
         {
            // m_spieler_animator_kontroll.SetTrigger("isIdle");
         }
-
+      
         if (move > 0 && !r_gesichts_richtung)
         {
 
@@ -77,6 +80,5 @@ public class Spieler_Kontroll_Script : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
 
 }

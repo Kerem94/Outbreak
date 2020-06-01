@@ -28,7 +28,7 @@ public class PointAndShoot : MonoBehaviour
     {
         Cursor.visible = false;
         a_animation = GetComponentInParent<Animator>();
-        cm = GameObject.FindGameObjectWithTag("Animation_Kontroller").GetComponent<Camera_Manager>();
+        cm = GameObject.FindGameObjectWithTag("Animation_Kontroller_Spieler").GetComponent<Camera_Manager>();
     }
 
     // Update is called once per frame

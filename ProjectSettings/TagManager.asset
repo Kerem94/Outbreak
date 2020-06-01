@@ -7,6 +7,12 @@ TagManager:
   - enemy
   - spieler_geschoss
   - Animation_Kontroller
+  - Animation_Kontroller_Baseball
+  - zombie
+  - baseball
+  - Zombie_Animation_Kontroller
+  - zombie_hand
+  - spieler_bauch
   layers:
   - Default
   - TransparentFX
@@ -50,6 +56,9 @@ TagManager:
   - name: vodergrund
     uniqueID: 3866792359
     locked: 0
-  - name: Spieler
+  - name: enemy
     uniqueID: 2076478285
+    locked: 0
+  - name: spieler
+    uniqueID: 3952396415
     locked: 0
