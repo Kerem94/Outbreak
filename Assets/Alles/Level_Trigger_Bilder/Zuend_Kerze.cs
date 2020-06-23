@@ -13,7 +13,10 @@ public class Zuend_Kerze : MonoBehaviour
     {
         z_zuend_kerze_anim = GetComponent<Animator>();
     }
-
+    public void Update()
+    {
+        
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +24,7 @@ public class Zuend_Kerze : MonoBehaviour
         {
             z_zuend_kerze_anim.SetTrigger("zuend_kerze");
             z_zuend_kerze.interactable = true;
+            Spiel_Manager.lvl +=1;
             SceneManager.LoadScene("Waffen_Kaufen");
         }
     }

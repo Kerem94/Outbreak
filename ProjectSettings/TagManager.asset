@@ -13,6 +13,15 @@ TagManager:
   - Zombie_Animation_Kontroller
   - zombie_hand
   - spieler_bauch
+  - g_geld_1
+  - zombie_kopf
+  - Pistolen_Animation_Kontroller
+  - zombie_bauch
+  - geschoss
+  - zombie_boss_kopf
+  - zombie_boss_bauch
+  - zombie_boss_axt
+  - "zombie_boss_fu\xDF"
   layers:
   - Default
   - TransparentFX

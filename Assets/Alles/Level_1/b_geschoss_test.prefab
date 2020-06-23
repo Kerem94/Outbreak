@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5024885445503332903}
   - component: {fileID: 387521276582055875}
   - component: {fileID: 2846589931657992204}
-  - component: {fileID: 573731822557594100}
   m_Layer: 0
   m_Name: b_geschoss_test
   m_TagString: spieler_geschoss
@@ -81,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 0.65, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &387521276582055875
@@ -121,21 +120,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.7500001
---- !u!114 &573731822557594100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8765727271087390058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e270e9bac42b67c46928ce0d93321d17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTime: 4
-  distance: 7
-  damage: 10
-  whatIsSolid:
-    serializedVersion: 2
-    m_Bits: 4294967295

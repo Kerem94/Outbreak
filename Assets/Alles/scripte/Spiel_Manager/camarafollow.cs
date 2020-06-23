@@ -24,13 +24,13 @@ public class camarafollow: MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (playerHealth.spieler_lebt ==true)
+        if (Spieler_Leben.spieler_lebt ==true)
         {
             Vector3 targetCamPos = target.position + offset;
             transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);
             if (transform.position.y < lowY) transform.position = new Vector3(transform.position.x, lowY, transform.position.z);
         }
-        if(playerHealth.spieler_lebt == false)
+        if(Spieler_Leben.spieler_lebt == false)
         {
             Vector3 targetCamPos = leiche.position + offset;
             transform.position = Vector3.Lerp(transform.position, targetCamPos, smoothing * Time.deltaTime);

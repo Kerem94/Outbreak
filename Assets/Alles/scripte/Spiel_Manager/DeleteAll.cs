@@ -8,4 +8,12 @@ public class DeleteAll : MonoBehaviour {
     {
         PlayerPrefs.DeleteAll();
     }
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.L))
+        {
+            PlayerPrefs.DeleteAll();
+            print("Alle daten gelöscht");
+        }
+    }
 }

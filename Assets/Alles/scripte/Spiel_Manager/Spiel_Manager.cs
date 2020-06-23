@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Spiel_Manager : MonoBehaviour
 {
+   public static int lvl=0;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,22 @@ public class Spiel_Manager : MonoBehaviour
 
     public void exit()
     {
-        SceneManager.LoadScene("Level_2");
+        if (lvl == 1)
+        {
+            SceneManager.LoadScene("Level_2");
+            print("level 2");
+        }
+        if (lvl == 2)
+        {
+            SceneManager.LoadScene("Level_3");
+            print("level 3");
+        }
+        if (lvl == 3)
+        {
+            SceneManager.LoadScene("Level_4");
+            print("Boss fight");
+        }
+
     }
 
 

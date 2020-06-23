@@ -22,13 +22,13 @@ public class PointAndShoot : MonoBehaviour
     public float bulletSpeed = 60.0f;
     //=================================
     private Vector3 target;
-    private Camera_Manager cm;
+    private Camera_Manager  cm;
     // Use this for initialization
     void Start()
     {
         Cursor.visible = false;
         a_animation = GetComponentInParent<Animator>();
-        cm = GameObject.FindGameObjectWithTag("Animation_Kontroller_Spieler").GetComponent<Camera_Manager>();
+        cm = GameObject.FindGameObjectWithTag("Animation_Kontroller").GetComponent<Camera_Manager>();
     }
 
     // Update is called once per frame
@@ -58,7 +58,7 @@ public class PointAndShoot : MonoBehaviour
                     muzzel(direction, rotationZ);
                     timeBtwShots = startTimeBtwShots;
                     //laden = true;
-                    // a_animation.SetTrigger("isLaden");
+                     a_animation.SetTrigger("isLaden");
                     cm.spieler_is_laden();
                     SoundManagerScript.PlaySound("shotgun_laden");
                 }

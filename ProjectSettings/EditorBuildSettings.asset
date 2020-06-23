@@ -12,9 +12,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_1.unity
     guid: a68a5915f656d374abd026cd443170a9
   - enabled: 1
+    path: Assets/Scenes/Level_2.unity
+    guid: 43cf98675fc32e147b09c3f555c67ab4
+  - enabled: 1
+    path: Assets/Scenes/Level_3.unity
+    guid: 133c1702277c0d24086a92f15301c9a3
+  - enabled: 1
+    path: Assets/Scenes/Level_4.unity
+    guid: 24902deaed6e0694d813e6f90262081e
+  - enabled: 1
     path: Assets/Scenes/Waffen_Kaufen.unity
     guid: c1ff549d401826345af93747e0e69d9e
-  - enabled: 1
-    path: Assets/Scenes/Level_2.unity
-    guid: 01a2505d2ce04394bb3f92e0cf2ddb22
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

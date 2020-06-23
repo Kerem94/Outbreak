@@ -9,7 +9,10 @@ public class Zombie_Leben : MonoBehaviour
     public bool z_zombie_leben;
    
     // [SerializeField]
-    // GameObject soldatTot;
+    // GameObject zombie_leiche;
+    public bool d_zombie_drop;
+    public GameObject  g_geld;
+
     public GameObject f_floating_text;
     public Transform t_text_position;
 
@@ -34,6 +37,7 @@ public class Zombie_Leben : MonoBehaviour
     {
         e_ep_spieler = GameObject.FindObjectOfType(typeof(EP)) as EP;
         e_ep_spieler.addEP(10);
+
         a_aktuelles_leben -= damage;
         s_zombie_slider.value = a_aktuelles_leben;
         if (f_floating_text && a_aktuelles_leben >= 0)
@@ -52,8 +56,11 @@ public class Zombie_Leben : MonoBehaviour
     }
     void makeDead()
     {
-        
-        
+        if (d_zombie_drop == true)
+        {
+            // Fuer leben oder geld
+             Instantiate(g_geld, transform.position, transform.rotation);
+        }
         // Fuer leiche
         // Instantiate(soldatTot, transform.position, transform.rotation);
         if (z_zombie == false || z_zombie == false)

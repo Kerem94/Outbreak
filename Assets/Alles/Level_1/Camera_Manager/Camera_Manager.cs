@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class Camera_Manager : MonoBehaviour
 {
-    public Animator myanim;
+    public Animator a_animation;
 
     public void spieler_is_laden()
     {
-        myanim.SetTrigger("isLaden");
+        a_animation.SetTrigger("isLaden");
     }
 
     //===================
     public void z_zombie_getroffen()
     {
-        myanim.SetTrigger("isHit");
+        a_animation.SetTrigger("isHit");
         print("hit_animation");
     }
+
+    
 }

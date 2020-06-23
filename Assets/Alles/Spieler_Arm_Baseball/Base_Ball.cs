@@ -31,7 +31,7 @@ public class Base_Ball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("zombie"))
+        if (collision.CompareTag("zombie_kopf"))
         {
             z_zl = GameObject.FindObjectOfType(typeof(Zombie_Leben)) as Zombie_Leben;
             z_zl.addDamage(10);

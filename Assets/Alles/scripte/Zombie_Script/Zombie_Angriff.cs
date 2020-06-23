@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Zombie_Angriff : MonoBehaviour
 {
-    playerHealth ph;
+    Spieler_Leben s_spieler_leben;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("spieler_bauch"))
         {
-            ph = GameObject.FindObjectOfType(typeof(playerHealth)) as playerHealth;
-            ph.addDamage(3);
+            s_spieler_leben = GameObject.FindObjectOfType(typeof(Spieler_Leben)) as Spieler_Leben;
+            s_spieler_leben.addDamage(3);
            
         }
     }
